@@ -1,0 +1,131 @@
+.section {
+    padding: 10rem 0 15rem;
+
+    .row {
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+
+    .col-lg-6 {
+        border: 5px solid $primary-color;
+    }
+
+    .online-links {
+        margin-top: 10rem;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    }
+
+    img {
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        margin: -1px;
+    }
+}
+
+.section-container {
+    padding: 5rem 14rem;
+
+    .title {
+        margin-bottom: 7rem;
+        text-align: center;
+    }
+
+    .rest-count {
+        margin: 2rem 0 2rem;
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 22;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.input-count {
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-lg;
+    
+    span {
+        font-size: $font-size-sm;
+    }
+
+    button {
+        border: 0;
+        font-size: $font-size;
+        background-color: transparent;
+    }
+
+    h4 {
+        margin: 0 2rem;
+    }
+}
+
+.brand {
+    margin-right: 4rem;
+    padding: 2rem 0;
+
+    .text-lg {
+        margin: 0 4rem;
+
+        &:last-child {
+            margin-top: -1.5rem;
+        }
+    }
+}
+
+.section-spacing-sm {
+    padding: 4rem $space-section-content;
+}
+
+.pattern-section {
+    .container {
+        padding: 0 8rem;
+    }
+    
+    .row {
+        margin: 0 -8rem;
+        flex-wrap: wrap;
+
+        .col-lg-6 {
+            border: 0;
+            padding: 0 4rem;
+        }
+
+        img {
+            border: 5px solid $primary-color;
+        }
+
+        h4 {
+            font-size: $font-size;
+        }
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    .pattern {
+        margin-top: 5rem;
+
+        .title {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@include mq(xxl, max) {
+    .section-container {
+        padding: 5rem 3rem;
+    }
+}

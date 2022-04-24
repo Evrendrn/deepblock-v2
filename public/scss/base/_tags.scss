@@ -1,0 +1,38 @@
+a, p {
+    margin: 0;
+    padding: 0;
+    font-size: $font-size;
+    color: $primary-color;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: color .3s, background-color .3s;
+
+    &.link-primary:hover {
+        background-color: $white-color;
+        color: $primary-color;
+    }
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    font-family: $font-family;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
